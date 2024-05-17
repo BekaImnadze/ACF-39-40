@@ -4,21 +4,43 @@ get_header();
 $first_section = get_field('first_section');
 $hero_name = $first_section['hero_name'];
 $hero_specialization = $first_section['hero_specialization'];
-$paragraph = $first_section['paragraph'];
+$hero_text = $first_section['hero_text'];
 $social_links = $first_section['social_links'];
 
+// error კოდი
+$featured_works = get_field('featured_works');
+$main_title = $featured_works ['main_title'];
+$secondary_title = $featured_works ['secondary_title'];
+$feature_text = $featured_works ['feature_text'];
+$secondary_paragraph = $featured_works ['secondary_paragraph'];
+$image = $featured_works ['card_image'];
 
-// echo '<pre>';
-// print_r($first_section);
-// echo '</pre>';
-// ?>
+// $featured_works = get_field('featured_works') ?? [];
+// $main_title = $featured_works['main_title'] ?? '';
+// $secondary_title = $featured_works['secondary_title'] ?? '';
+// $feature_text = $featured_works['feature_text'] ?? '';
+// $secondary_paragraph = $featured_works['secondary_paragraph'] ?? '';
+// $image = $featured_works['card_image'] ?? '';
+
+
+
+$test_post = get_field('test_post');
+echo '<pre>';
+print_r($test_post);
+echo '</pre>';
+
+
+
+
+?>
 
 <main class="home-page container">
+
     <!-- first section -->
     <section class="section-1 " >
         <div class="hero-content container">
               <div class="heroSection">
-                <p class="hero-text"><?php echo $paragraph ?></p>
+                <p class="hero-text"><?php echo $hero_text ?></p>
                     <h1 class="hero-title"><?php echo $hero_name ?></h1>
                     <p class="hero-text"><?php echo $hero_specialization ?></p>
                 <div class="hero-social">
@@ -46,29 +68,25 @@ $social_links = $first_section['social_links'];
               </div>
         </div>
     </section>
+
     <!-- second section -->
     <section class="section-2">
         <div class="section-2-box container">
-            <h1>#Featured_Works</h1>
+            <h1><?php echo $main_title ?></h1>
             <div class="featured-content">
                 <div class="featured-content-text">
-                    <h3>
-                        Id vel varius mauris morbi quis at commodo, cras
-                    </h3>
-                    <p>
-                    Eget diam purus, a massa sed egestas pulvinar id. Tristique odio eu.
-                    </p>
+                    <h3><?php echo $secondary_title ?></h3>
+                    <p> <?php echo $feature_text ?></p>
                     <ul>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
+                        <li><?php echo $secondary_paragraph ?></li>
+                        
                     </ul>
                     <button class="myBtn">
                         Read More
                     </button>
                 </div>
                 <div class="img-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/girl.png" alt="img">
+                    <img src=<?php echo $image ?> alt="img">
                 </div>
             </div>
             <div class="featured-content">
@@ -148,6 +166,7 @@ $social_links = $first_section['social_links'];
         </div>
     </section>
 
+    <!-- third section -->
     <section-3 class="section-3">
         <div class="playground-box container">
             <h1>#Playground</h1>
@@ -165,6 +184,7 @@ $social_links = $first_section['social_links'];
             </div>
     </section-3>
 
+    <!-- fourth section -->
     <section class="section-4">
         <div class="allRights container">
             <p>
@@ -178,9 +198,11 @@ $social_links = $first_section['social_links'];
         </div>
 
     </section>
+
+    <div>
+        
+    </div>
+
 </main>
 
 
-
-<?php
-get_footer();

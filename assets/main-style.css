@@ -31,8 +31,12 @@
   color: #f6490d;
 }
 
+.header-menu li:nth-child(1) a:hover {
+  color:#faf9f0;
+}
+
 .header-menu a:hover {
-  color: #faf9f0;
+  color: #f6490d;
 }
 
 .main-navigation.portfolio-navigation {
@@ -61,6 +65,7 @@
   flex-direction: column;
   align-items: center;
   width: 689px;
+  margin: 0;
 }
 
 .hero-text {
@@ -69,7 +74,7 @@
   font-weight: 400;
   line-height: 35.28px;
   color: #faf9f0;
-  margin-bottom: 36px ;
+  margin-bottom: 36px;
 }
 
 .hero-title {
@@ -93,11 +98,26 @@
 
 /* section 2 */
 
-.section-2
- {
+.section-2 {
   width: 100%;
   height: 100%;
 }
+
+
+.featured-content .img-box {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.featured-content .img-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 .section-2-box {
   display: flex;
@@ -118,18 +138,18 @@
 .featured-content {
   display: flex;
   align-items: center;
-  gap:178px;
+  gap: 178px;
   margin-bottom: 140px;
 }
 
 .featured-content-text {
-  color:#faf9f0;
+  color: #faf9f0;
   width: 562px;
   height: 410px;
 }
 
-.featured-content-text h3{
-  font-family: 'Montserrat', sans-serif;
+.featured-content-text h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-style: italic;
   font-weight: 600;
@@ -138,7 +158,7 @@
 }
 
 .featured-content-text p {
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30.48px;
@@ -146,7 +166,7 @@
 }
 
 .featured-content-text ul li {
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -167,12 +187,11 @@
 }
 
 .myBtn {
-  border: 2px solid #1DCED8;
+  border: 2px solid #1dced8;
   background: transparent;
-  color: #1DCED8;
+  color: #1dced8;
   padding: 16px 26px;
 }
-
 
 /* section-3 */
 
@@ -181,9 +200,7 @@
   height: 100%;
 }
 
-
-
-.playground-box h1{
+.playground-box h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,11 +224,17 @@
 
 /* section-4 */
 
+.section-4 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 32px;
+}
+
 .allRights {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:9.78px;
+  gap: 9.78px;
   color: #faf9f0;
 }
 
