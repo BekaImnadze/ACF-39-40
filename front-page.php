@@ -7,27 +7,29 @@ $hero_specialization = $first_section['hero_specialization'];
 $hero_text = $first_section['hero_text'];
 $social_links = $first_section['social_links'];
 
-// error კოდი
-$featured_works = get_field('featured_works');
-$main_title = $featured_works ['main_title'];
-$secondary_title = $featured_works ['secondary_title'];
-$feature_text = $featured_works ['feature_text'];
-$secondary_paragraph = $featured_works ['secondary_paragraph'];
-$image = $featured_works ['card_image'];
 
-// $featured_works = get_field('featured_works') ?? [];
-// $main_title = $featured_works['main_title'] ?? '';
-// $secondary_title = $featured_works['secondary_title'] ?? '';
-// $feature_text = $featured_works['feature_text'] ?? '';
-// $secondary_paragraph = $featured_works['secondary_paragraph'] ?? '';
-// $image = $featured_works['card_image'] ?? '';
+$featured_work = get_field('featured_work');
+$main_title = $featured_work ['main_title'];
+$secondary_title = $featured_work ['secondary_title'];
+$featured_text = $featured_work ['featured_text'];
+$list_text = $featured_work ['list_text'];
+$image = $featured_work ['card_image'];
+$btnText = $featured_work ['button_text'];
+
+$featured_works_2 = get_field('featured_work_2');
+
+$featured_works_3 = get_field('featured_work_3');
+
+$featured_works_4 = get_field('featured_work_4');
+
+$featured_works_5 = get_field('featured_work_5')
 
 
 
-$test_post = get_field('test_post');
-echo '<pre>';
-print_r($test_post);
-echo '</pre>';
+
+// echo '<pre>';
+// print_r($featured_works_2);
+// echo '</pre>';
 
 
 
@@ -72,18 +74,16 @@ echo '</pre>';
     <!-- second section -->
     <section class="section-2">
         <div class="section-2-box container">
-            <h1><?php echo $main_title ?></h1>
+        <h1><?php echo $main_title ?></h1>
             <div class="featured-content">
                 <div class="featured-content-text">
                     <h3><?php echo $secondary_title ?></h3>
-                    <p> <?php echo $feature_text ?></p>
+                    <p> <?php echo $featured_text ?></p>
                     <ul>
-                        <li><?php echo $secondary_paragraph ?></li>
+                        <li><?php echo $list_text ?></li>
                         
                     </ul>
-                    <button class="myBtn">
-                        Read More
-                    </button>
+                    <button class="myBtn"><?php echo $btnText?></button>
                 </div>
                 <div class="img-box">
                     <img src=<?php echo $image ?> alt="img">
@@ -91,76 +91,44 @@ echo '</pre>';
             </div>
             <div class="featured-content">
                 <div class="img-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/men.png" alt="img">
+                    <img src=<?php echo $featured_works_2 ['card_image_2']; ?> alt="img">
                 </div>
                 <div class="featured-content-text">
-                    <h3>
-                        Id vel varius mauris morbi quis at commodo, cras
-                    </h3>
-                    <p>
-                    Eget diam purus, a massa sed egestas pulvinar id. Tristique odio eu.
-                    </p>
-                    <ul>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
-                    </ul>
-                    <button class="myBtn">
-                        Download
-                    </button>
+                    <h3><?php echo $featured_works_2 ['secondary_title_2']; ?> </h3>
+                    <p> <?php echo $featured_works_2 ['featured_text_2']; ?> </p>
+                    <ul><?php echo $featured_works_2 ['list_text_2']; ?></ul>
+                    <button class="myBtn"><?php echo $featured_works_2 ['button_text_2']; ?></button>
                 </div>
             </div>
             <div class="featured-content">
                 <div class="featured-content-text">
-                    <h3>
-                        Id vel varius mauris morbi quis at commodo, cras
-                    </h3>
-                    <p>
-                    Eget diam purus, a massa sed egestas pulvinar id. Tristique odio eu.
-                    </p>
-                    <ul>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
-                        <li>Eget diam purus, a massa</li>
-                    </ul>
-                    <button class="myBtn">
-                        Read More
-                    </button>
+                    <h3><?php echo $featured_works_3 ['secondary_title_3']; ?> </h3>
+                    <p><?php echo $featured_works_3 ['featured_text_3']; ?> </p>
+                    <ul><?php echo $featured_works_3 ['list_text_3']; ?></ul>
+                    <button class="myBtn"><?php echo $featured_works_3 ['button_text_3']; ?></button>
                 </div>
                 <div class="img-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/girl-with-horse.png" alt="img">
+                    <img src=<?php echo $featured_works_3 ['card_image_3']; ?> alt="img">
                 </div>
             </div>
             <div class="featured-content">
                 <div class="img-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/girl-and-men.png" alt="img">
+                    <img src=<?php echo $featured_works_4 ['card_image_4']; ?> alt="img">
                 </div>
                 <div class="featured-content-text">
-                    <h3>
-                        Id vel varius mauris morbi quis at commodo, cras
-                    </h3>
-                    <p>
-                    In dignissim ut tortor quam. In et convallis suspendisse vel. Urna, ante ut mauris, dolor interdum libero, proin accumsan, vitae. In risus sit convallis volutpat a magna pulvinar volutpat.
-                    </p>
-                    <button class="myBtn">
-                        Live Demo
-                    </button>
+                    <h3><?php echo $featured_works_4 ['secondary_title_4']; ?></h3>
+                    <p><?php echo $featured_works_4 ['featured_text_4']; ?></p>
+                    <button class="myBtn"><?php echo $featured_works_4 ['button_text_4']; ?></button>
                 </div>
             </div>
             <div class="featured-content">
                 <div class="featured-content-text">
-                    <h3>
-                        Id vel varius mauris morbi quis at commodo, cras
-                    </h3>
-                    <p>
-                    In dignissim ut tortor quam. In et convallis suspendisse vel. Urna, ante ut mauris, dolor interdum libero, proin accumsan, vitae. In risus sit convallis volutpat a magna pulvinar volutpat.
-                    </p>
-                    <button class="myBtn">
-                        Live Demo
-                    </button>
+                    <h3><?php echo $featured_works_5 ['secondary_title_5']; ?></h3>
+                    <p><?php echo $featured_works_5 ['featured_text_5']; ?></p>
+                    <button class="myBtn"><?php echo $featured_works_5 ['button_text_5']; ?></button>
                 </div>
                 <div class="img-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/girl2.png" alt="img">
+                    <img src=<?php echo $featured_works_5 ['card_image_5']; ?> alt="img">
                 </div>
             </div>
         </div>
