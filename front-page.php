@@ -153,24 +153,14 @@ $featured_works_5 = get_field('featured_work_5')
     </section-3>
 
     <!-- fourth section -->
-    <section class="section-4">
-        <div class="allRights container">
-            <p>
-            All Rights Reserved
-            </p>
-            <img src="<?php echo get_template_directory_uri() . './assets/images/copyright.png' ?>" alt="">
-            <p>
-            2021 akhiltj
-            </p>
-            <img src="<?php echo get_template_directory_uri() . './assets/images/heart.png' ?>" alt="">
-        </div>
-
-    </section>
+    
 
     <div>
         
     </div>
 
 </main>
+<?php
+   get_footer();
 
 

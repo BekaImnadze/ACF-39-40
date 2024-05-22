@@ -364,22 +364,25 @@
 
 /* contact */
 
-.input-box {
+.contact-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
 }
 
-.contact-inputs {
+.portfolio-contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-.contact-inputs input {
+.portfolio-contact-form input {
   width: 796px;
   height: 52px;
   gap: 24px;
@@ -387,52 +390,53 @@
   border: 1px solid #faf9f0;
 }
 
-.contact-inputs ::placeholder {
-  font-family: " Fira Code", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 37.4px;
-  text-align: left;
-  padding: 7px 12px;
-}
-
-.contact-inputs input:nth-child(3) {
+.wpcf7-form-control {
   width: 796px;
   height: 125px;
   gap: 24px;
   background: transparent;
   border: 1px solid #faf9f0;
-  margin-bottom: 40px;
 }
-.contact-inputs input:nth-child(3)::placeholder {
+
+.wpcf7-form-control::placeholder {
   padding: 7px 12px;
+  font-family: "Fira Code", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 37.4px;
+  color: #faf9f0;
 }
 
-.contact {
-  max-width: 796px;
-  max-height: 381px;
-  margin-left: 322px;
-  margin-bottom: 254px;
-}
-
-.social-box {
-  width: 796px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-box .hero-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-box .buttons {
+.portfolio-contact-form input[type="submit"] {
+  border: 2px solid #1dced8;
+  background: transparent;
+  color: #1dced8;
+  padding: 16px 26px;
   width: 196px;
   height: 64px;
   font-family: "Fira Code", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 25.74px;
+  margin-left: 670px;
+  cursor: pointer;
+}
+
+.social-box {
+  width: 796px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top:67%;
+  gap: 22px;
+}
+
+.social-box a {
+  width: 39px;
+  height: 39px;
+}
+
+.social-box a img {
+  width: 100%;
+  height: 100%;
 }

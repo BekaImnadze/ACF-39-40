@@ -4,11 +4,27 @@
 get_header();
 
 
+$featured_work = get_field('featured_work');
+$main_title = $featured_work ['main_title'];
+$secondary_title = $featured_work ['secondary_title'];
+$featured_text = $featured_work ['featured_text'];
+$list_text = $featured_work ['list_text'];
+$image = $featured_work ['card_image'];
+$btnText = $featured_work ['button_text'];
+
+$featured_works_2 = get_field('featured_work_2');
+
+$featured_works_3 = get_field('featured_work_3');
+
+$featured_works_4 = get_field('featured_work_4');
+
+$featured_works_5 = get_field('featured_work_5')
 ?>          
 
-<!-- <section class="section-2">
+
+<section class="section-2">
         <div class="section-2-box container">
-        <h1><?php echo $main_title ?></h1>
+           
             <div class="featured-content">
                 <div class="featured-content-text">
                     <h3><?php echo $secondary_title ?></h3>
@@ -42,7 +58,7 @@ get_header();
                     <button class="myBtn"><?php echo $featured_works_3 ['button_text_3']; ?></button>
                 </div>
                 <div class="img-box">
-                    <img src=<?php echo $featured_works_3 ['card_image_3']; ?> alt="img">
+                    <img src= <?php echo $featured_works_3['card_image_3']?> alt="img">
                 </div>
             </div>
             <div class="featured-content">
@@ -67,83 +83,5 @@ get_header();
             </div>
         </div>
     </section>
-        <h1><?php echo $main_title ?></h1>
-        <div class="featured-content">
-            <div class="featured-content-text">
-                <h3><?php echo $secondary_title ?></h3>
-                <p> <?php echo $feature_text ?></p>
-                <ul>
-                    <li><?php echo $secondary_paragraph ?></li>
-                </ul>
-                <button class="myBtn">
-                    Read More
-                </button>
-            </div>
-            <div class="img-box">
-                <img src=<?php echo $image ?> alt="img">
-            </div>
-        </div>
-        <div class="featured-content">
-            <div class="img-box">
-                <img src=<?php echo $featured_works_2 ['card_image_2']; ?> alt="img">
-            </div>
-            <div class="featured-content-text">
-                <h3><?php echo $featured_works_2 ['secondary_title_2']; ?> </h3>
-                <p> <?php echo $featured_works_2 ['feature_text_2']; ?> </p>
-                <ul><?php echo $featured_works_2 ['secondary_paragraph_2']; ?></ul>
-                <button class="myBtn">
-                    Download
-                </button>
-            </div>
-        </div>
-        <div class="featured-content">
-            <div class="featured-content-text">
-                <h3><?php echo $featured_works_3 ['secondary_title_3']; ?> </h3>
-                <p><?php echo $featured_works_3 ['feature_text_3']; ?> </p>
-                <ul><?php echo $featured_works_3 ['secondary_paragraph_3']; ?></ul>
-                <button class="myBtn">
-                    Read More
-                </button>
-            </div>
-            <div class="img-box">
-                <img src=<?php echo $featured_works_3 ['card_image_3']; ?> alt="img">
-            </div>
-        </div>
-        <div class="featured-content">
-            <div class="img-box">
-                <img src=<?php echo $featured_works_4 ['card_image_4']; ?> alt="img">
-            </div>
-            <div class="featured-content-text">
-                <h3><?php echo $featured_works_4 ['secondary_title_4']; ?></h3>
-                <p><?php echo $featured_works_4 ['feature_text_4']; ?></p>
-                <button class="myBtn">
-                    Live Demo
-                </button>
-            </div>
-        </div>
-        <div class="featured-content">
-            <div class="featured-content-text">
-                <h3><?php echo $featured_works_5 ['secondary_title_5']?> </h3>
-                <p><?php echo $featured_works_5 ['feature_text_5']?></p>
-                <button class="myBtn">
-                    Live Demo
-                </button>
-            </div>
-            <div class="img-box">
-                <img src=<?php echo $featured_works_5 ['card_image_5']; ?> alt="img">
-            </div>
-        </div>
-    </div> -->
-    <section class="section-4">
-        <div class="allRights container">
-            <p>
-            All Rights Reserved
-            </p>
-            <img src="<?php echo get_template_directory_uri() . './assets/images/copyright.png' ?>" alt="">
-            <p>
-            2021 akhiltj
-            </p>
-            <img src="<?php echo get_template_directory_uri() . './assets/images/heart.png' ?>" alt="">
-        </div>
-
-    </section>
+   <?php
+   get_footer();

@@ -18,5 +18,18 @@
 
 <?php wp_footer(); ?>
 
+<section class="section-4">
+        <div class="allRights container">
+            <p>
+            All Rights Reserved
+            </p>
+            <img src="<?php echo get_template_directory_uri() . './assets/images/copyright.png' ?>" alt="">
+            <p>
+            2021 akhiltj
+            </p>
+            <img src="<?php echo get_template_directory_uri() . './assets/images/heart.png' ?>" alt="">
+        </div>
+
+    </section>
 </body>
 </html>
