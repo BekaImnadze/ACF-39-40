@@ -15,8 +15,8 @@ get_header();
 
 
 <div class="playground-box container"> 
-        <div class="playground-images">
-            <?php 
+    <div class="playground-images">
+        <?php 
             for($i = 1; $i <= sizeof($playground_image); $i++) {
                 $image = 'image_' . $i;
                 echo '
@@ -26,6 +26,7 @@ get_header();
             }
             ?>
 
-        </div>
+    </div>
+</div>
     <?php
     get_footer();

@@ -22,7 +22,7 @@ $featured_works_3 = get_field('featured_work_3');
 
 $featured_works_4 = get_field('featured_work_4');
 
-$featured_works_5 = get_field('featured_work_5')
+$featured_works_5 = get_field('featured_work_5');
 
 
 
