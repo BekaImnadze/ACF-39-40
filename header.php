@@ -31,11 +31,6 @@
 	<header id="masthead" class="site-header portfolio-header">
 		<div class="container">
 			<div class="header-content">
-				<div class="site-branding">
-					<?php
-					the_custom_logo();
-					?>
-				</div><!-- .site-branding -->
 				<nav id="site-navigation" class="main-navigation portfolio-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'website-acf' ); ?></button>
 					<?php
@@ -48,6 +43,23 @@
 					);
 					?>
 				</nav><!-- #site-navigation -->
+				<div class="hamburger-menu"> 
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<span class="hamburger-menu-icon">&#9776;</span>
+					</label>
+					<div class="sidebar-nav">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu-mobile',
+								'menu_class' 	 => 'header-menu',
+							)
+						);
+					?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->

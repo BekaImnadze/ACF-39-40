@@ -2,7 +2,8 @@
   background-color: #000249;
 }
 
-.body.container {
+.body,
+.container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -10,12 +11,16 @@
 
 .header-content {
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 30px;
   margin-bottom: 220px;
 }
 
 .header-menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 62px;
 }
 
@@ -101,6 +106,11 @@
 .section-2 {
   width: 100%;
   height: 100%;
+}
+
+.featured-content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .featured-content .img-box {
@@ -461,7 +471,7 @@
 }
 
 .single-project-content p {
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30.48px;
@@ -512,21 +522,20 @@
 .projects-archive-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:60px;
+  gap: 60px;
 }
 
 .projects-archive-card:nth-child(2n) .projects-archive-card-text {
-  order:1;
+  order: 1;
 }
 
 .projects-archive-card-excerpt {
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 30.48px; 
+  line-height: 30.48px;
   color: #faf9f0;
   margin-bottom: 60px;
-
 }
 
 .secondary-title {
@@ -544,4 +553,78 @@
 
 .project-archive-grid {
   margin-bottom: 200px;
+}
+
+/* hamburger menu  + sidebar */
+
+.hamburger-menu {
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+
+.hamburger-menu-icon {
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+.sidebar-nav {
+  position: fixed;
+  left: -250px;
+  height: 100%;
+  background: #0441b163;
+  top: 0;
+  width: 250px;
+  padding: 130px 16px;
+  transition: all 300ms;
+}
+
+#primary-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu:checked ~ .sidebar-nav {
+  left: 0;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1023px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+  .header-menu {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+
+  .featured-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
 }
