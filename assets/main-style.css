@@ -627,4 +627,229 @@
   .hero-title {
     font-size: 50px;
   }
+  .header-content {
+    margin: 40px;
+  }
+
+  .hero-social {
+    margin-bottom: 100px;
+  }
+  .featured-content {
+    gap: 120px;
+  }
+
+  .Archive-page {
+    font-size: 50px;
+  }
+
+  .projects-archive-card-text .secondary-title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 5px;
+  }
+
+  .projects-archive-card {
+    gap: 40px;
+    margin-left: 20px;
+  }
+
+  .projects-archive-card-excerpt {
+    margin-left: 5px;
+  }
+
+  .projects-archive-card-text a {
+    margin-left: 50px;
+  }
+
+  .projects-archive-card-img a > img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+
+  .about-box {
+    gap: 30px;
+  }
+  .about-box img {
+    width: 300px;
+    height: 300px;
+    margin-left: 5px;
+  }
+  .about-me h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 700px;
+  }
+
+  .experience h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .experience-text {
+    width: 700px;
+    margin-bottom: 100px;
+  }
+
+  .tools h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .tools-text {
+    width: 700px;
+    margin-bottom: 100px;
+  }
+
+  .buttons {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio-contact-form input {
+    width: 550px;
+  }
+
+  .wpcf7-form-control {
+    width: 550px;
+  }
+
+  .social-box {
+    top: 60%;
+    left: 14%;
+  }
+  .portfolio-contact-form input[type="submit"] {
+    margin-right: 300px;
+    width: 170px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-text {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .heroSection {
+    width: 370px;
+  }
+  .hero-social {
+    margin-bottom: 80px;
+  }
+
+  .section-2-box h1 {
+    font-size: 30px;
+  }
+  .featured-content-text {
+    width: 380px;
+  }
+  .featured-content-text h3 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .featured-content-text p {
+    font-size: 17px;
+    line-height: unset;
+    margin-left: 15px;
+  }
+
+  .featured-content-text ul li {
+    font: 15px;
+    line-height: unset;
+    margin-left: 40px;
+  }
+
+  .myBtn {
+    margin-left: 110px;
+  }
+
+  .featured-content .img-box {
+    width: 350px;
+    height: 350px;
+  }
+  .featured-content {
+    gap: 50px;
+    margin-bottom: 65px;
+  }
+
+  .playground-images img {
+    width: 350px;
+    height: 350px;
+  }
+  .playground-images {
+    margin-bottom: 100px;
+  }
+  .playground-box h1 {
+    margin-bottom: 55px;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-box img {
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+
+  .experience {
+    margin-bottom: 100px;
+  }
+  .experience-text {
+    width: 350px;
+    margin-bottom: 250px;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .buttons .myBtn {
+    margin-left: 10px;
+  }
+
+  .tools-text {
+    width: 350px;
+    margin-bottom: 230px;
+  }
+
+  .portfolio-contact-form input {
+    width: 350px;
+  }
+  .portfolio-contact-form input::placeholder {
+    font-size: 16px;
+  }
+
+  .wpcf7-form-control{
+    width: 350px;
+  }
+  .wpcf7-form-control::placeholder{
+    font-size: 16px;
+  }
+
+  .social-box {
+    top:60%;
+    left: 19%;
+  }
+  .portfolio-contact-form input[type="submit"] {
+    margin-right: 700px;
+    margin-top: 65px;
+}
+.contact-box {
+  margin-bottom: 100px;
+}
 }

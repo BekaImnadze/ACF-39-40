@@ -79,10 +79,7 @@ $featured_works_5 = get_field('featured_work_5');
                 <div class="featured-content-text">
                     <h3><?php echo $secondary_title ?></h3>
                     <p> <?php echo $featured_text ?></p>
-                    <ul>
-                        <li><?php echo $list_text ?></li>
-                        
-                    </ul>
+                    <ul><?php echo $list_text ?></ul>
                     <button class="myBtn"><?php echo $btnText?></button>
                 </div>
                 <div class="img-box">
